@@ -1,4 +1,7 @@
 Hızlıca dart'ı çalıştırmak için [dartpad'i](https://dartpad.dev/) kullanabilirsiniz.
+
+Daha detaylı bilgi ve pratik için udemy [kursunu](https://www.udemy.com/course/flutter-bootcamp-program-dart/) inceleyebilirsiniz.
+
 ## Dart Dilinin Temelleri
 
 ### Değişkenler
@@ -51,3 +54,16 @@ const int sabit2 = 44;
  
 
 ---
+
+
+### Kontrol Koşulları (If-Else / Switch-case)
+#### If-else semantiği
+```dart
+if(koşul-1){
+    // eğer koşul doğru ise
+} else if(koşul-2){
+    // eğer koşul-1 doğru değil, koşul-2 doğru ise
+} else {
+    // koşul-1 ve koşul-2 doğru değilse
+}
+```
