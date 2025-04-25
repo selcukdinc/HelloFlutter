@@ -51,10 +51,7 @@ Değişken tanımlandığında hafızada oluşur
 const int sabit2 = 44; 
 ```
 
- 
-
 ---
-
 
 ### Kontrol Koşulları (If-Else / Switch-case)
 #### If-else semantiği
@@ -67,3 +64,26 @@ if(koşul-1){
     // koşul-1 ve koşul-2 doğru değilse
 }
 ```
+
+
+### Koleksiyon Tipleri
+Veriyi depolarız, kullanırız. Her verinin turşusunu kurmasakta kolleksiyonluk yapabiliriz. Kullanım senaryolarına göre farklı tipte kolleksiyonlar vardır.
+
+#### 'List'ler
+
+Hemen hemen bir çok alanda kullanılabilecek yapılardır.
+
+| İndeks | Değerler |
+|:--:|:--:|
+| 0 | 6 Yumurta |
+| 1 | Süt |
+| 2 | Un |
+| 3 | Kabartma Tozu |
+
+#### 'HashSet'ler
+
+HashSet'lerde bir gruplama olmasına rağmen listeye hangi zamanda eklendiği bilinmemektedir. Kullanım alanlarına bir örnek verecek olursak şıklı bir soru yapıyorsanız aynı soruyu her çağırdığınızda şıkların sürekli yer değiştirdiğini görebiliriz. 
+
+#### 'HashMap'ler
+
+HashMaplar ise indeks'leri doğal sayılar yerine anahtarlardan oluşan listelere benzerler. Bu benzerliği ilkokuldan beri *sözlükler* ile biliyoruz aslında. Bir anahtar kelime ve o anahtar kelimeye karşılık gelen anlam. Anahtar 'kelime' olabileceği gibi yazılımda 'hashable' sınıflarda 
