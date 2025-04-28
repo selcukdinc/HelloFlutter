@@ -4,6 +4,37 @@ Daha detaylı bilgi ve pratik için udemy [kursunu](https://www.udemy.com/course
 
 ## Dart Dilinin Temelleri
 
+### Null Safety
+
+Veri tipinin yanına soru işareti koyularak değişken null'anabilir.
+
+```dart
+  //tanımlama
+  String? mesaj = null;
+```
+
+Yöntem-1 __*?*__ : null olabilen bir değişken kullanılmak istendiğinde, eğer değişken null uygulamanın çökmesini önler.
+
+```dart
+  print("Yöntem 1 : ${mesaj?.toUpperCase()}");
+```
+
+Yöntem-2 __*!*__ : Yazılım geliştirici insiyatif alarak null kontrolünü atlar.
+
+```dart
+print("Yöntem 2 : ${mesaj!.toUpperCase()}");
+```
+Yöntem-3 : If ile null kontrolü ve null olma durumunda işlem yapabilme
+
+```dart
+if(mesaj != null){
+    print("Yöntem 3 : ${mesaj.toUpperCase()}");
+  }else{
+    print("Mesaj null'dur");
+  }
+```
+--- 
+
 ### Değişkenler
 Dart, geçmiş dönemin dillerin ilkelliğini güncel dillerin yaklaşımlarıyla birlikte harmanlanmış dildir.
 
@@ -87,3 +118,4 @@ HashSet'lerde bir gruplama olmasına rağmen listeye hangi zamanda eklendiği bi
 #### 'HashMap'ler
 
 HashMaplar ise indeks'leri doğal sayılar yerine anahtarlardan oluşan listelere benzerler. Bu benzerliği ilkokuldan beri *sözlükler* ile biliyoruz aslında. Bir anahtar kelime ve o anahtar kelimeye karşılık gelen anlam. Anahtar 'kelime' olabileceği gibi yazılımda 'hashable' sınıflarda 
+
