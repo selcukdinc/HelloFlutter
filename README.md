@@ -119,3 +119,26 @@ HashSet'lerde bir gruplama olmasına rağmen listeye hangi zamanda eklendiği bi
 
 HashMaplar ise indeks'leri doğal sayılar yerine anahtarlardan oluşan listelere benzerler. Bu benzerliği ilkokuldan beri *sözlükler* ile biliyoruz aslında. Bir anahtar kelime ve o anahtar kelimeye karşılık gelen anlam. Anahtar 'kelime' olabileceği gibi yazılımda 'hashable' sınıflarda 
 
+
+## Olaylar 
+
+#### Olay : 'Switch-case' ile Enum'u bir arada kullanmak
+- `konserve_boyut` adında yeni dosya oluştur
+- aşağıdaki gibi enumu belirt
+   - ```dart
+        enum KonserveBoyut {
+            kucuk,orta,buyuk
+        }
+- Switch-Case kullanılacak yere gel
+  - ```dart
+        void ucretHesala(KonserveBoyut boyut, int adet){
+            int maliyet = 1;
+            switch(boyut){
+              case KonserveBoyut.kucuk :  { maliyet = adet * 20; } break;
+              case KonserveBoyut.orta :   { maliyet = adet * 40; } break;
+              case KonserveBoyut.buyuk :  { maliyet = adet * 60; } break;
+            }
+            print("toplam maliyet : $maliyet");
+        }
+  - Örnek bir kullanım yukarıda verilmiştir.
+  - Kullanıdığın enum farklı bir dosyada olduğu için <br> `import 'package:flutter_entry/nesne_tabanli_programlama/konserve_boyut.dart';` <br> senin durumuna uyan bir import eklenmiş olması gerekiyor.
