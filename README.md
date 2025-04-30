@@ -96,6 +96,22 @@ if(koşul-1){
 }
 ```
 
+#### Switch-case semantiği
+```dart
+switch(değişken){
+    case 1: 
+        // değişken 1 koşulunda olursa
+        break;
+    default:
+        // herhangi bir case uymayan değişken değeri için kullanılabilir.
+        break;
+}
+```
+
+---
+
+
+
 
 ### Koleksiyon Tipleri
 Veriyi depolarız, kullanırız. Her verinin turşusunu kurmasakta kolleksiyonluk yapabiliriz. Kullanım senaryolarına göre farklı tipte kolleksiyonlar vardır.
